@@ -32,9 +32,8 @@ public class Fraction {
         return fSum;
     }
 
-    public Fraction sum (int numerator) {
+    public Fraction sum(int numerator) {
         Fraction f1 = new Fraction(numerator, 1);
-        System.out.println(f1);
         return sum(f1);
     }
 
@@ -67,10 +66,14 @@ class Math {
 
     static int nod(int a, int b) {
         while (b != 0) {
-            int x = b;
-            b = a % b;
-            a = x;
+           int x = b;
+           b = a % b;
+           a = x;
         }
-        return a;
+        if ( a < 0) {
+            return -a;
+        } else {
+            return a;
+        }
     }
 }

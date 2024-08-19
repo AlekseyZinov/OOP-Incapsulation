@@ -8,8 +8,8 @@ public class Main {
         System.out.println(f3);
         System.out.println("");
 
-
         System.out.println(f1.sum(f2).sum(f3).minus(5));
+
 
     }
 }
